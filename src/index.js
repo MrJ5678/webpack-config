@@ -1,15 +1,4 @@
-import "./styles/index.scss"
+import { render } from "react-dom"
+import App from "./components/App"
 
-const object = {
-  name: "Jld",
-  age: 30,
-}
-
-const seniorObject = {
-  ...object,
-  hobby: "code",
-  gender: "female",
-}
-
-console.log(object)
-console.log(seniorObject)
+render(<App />, document.getElementById("root"))
